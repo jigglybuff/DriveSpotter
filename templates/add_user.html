@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+<h1>User List</h1>
+
+
+
+
+	{% for user in myUser %}
+		<li> {{user.first_Name}}.  {{ user.last_Name}} - {{  user.email  }}</li>
+		{% endfor %}
+
+	<a href="/logout">Register an account</a>
+	</body>
+
+	</html>
